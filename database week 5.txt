@@ -1,0 +1,46 @@
+WEEK 5 DATABASE ASSIGNMENT
+Database Indexing and Optimization
+Question 1: Drop an Index Named IdxPhone from the customers Table
+
+SQL Query:
+
+DROP INDEX IdxPhone ON customers;
+
+
+Explanation: This statement removes the index named IdxPhone from the customers table.
+
+Question 2: Create a User Named bob with a Password Restricted to Localhost
+
+SQL Query:
+
+CREATE USER 'bob'@'localhost'
+IDENTIFIED BY 'S$cu3r3!';
+
+
+Explanation: This statement creates a MySQL user named bob, sets the specified password, and restricts the account to connections originating from the local host.
+
+Question 3: Grant the INSERT Privilege to User bob on the salesDB Database
+
+SQL Query:
+
+GRANT INSERT ON salesDB.*
+TO 'bob'@'localhost';
+
+
+Explanation: This statement grants bob permission to insert records into tables in the salesDB database without granting additional privileges such as UPDATE or DELETE.
+
+Question 4: Change the Password for User bob
+
+SQL Query:
+
+ALTER USER 'bob'@'localhost'
+IDENTIFIED BY 'P$55!23';
+
+
+Explanation: This statement changes the password for the MySQL account bob@localhost to the newly specified password.
+
+Conclusion
+
+This assignment demonstrates essential database administration tasks, including dropping indexes, creating database users, granting privileges, and updating user passwords. These operations help maintain database performance, manage access control, and protect sensitive information.
+
+End of Assignment
